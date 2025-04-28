@@ -1,0 +1,130 @@
+body {
+  background-color: grey;
+}
+h2 {
+  text-align: center;
+  background-color: blue;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  animation-name: changeColor;
+  animation-duration: 4s;
+  animation-delay: 9s;
+  animation-iteration-count: infinite;
+}
+i {
+  display: none;
+}
+div {
+  margin: 25px auto;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.n1 span {
+  padding-left: 115px;
+}
+.n2 span {
+  padding-left: 34px;
+}
+.n3 span {
+  padding-left: 160px;
+}
+.n4 span {
+  padding-left: 157px;
+}
+.n5 span {
+  padding-left: 107px;
+}
+.n6 span {
+  padding-left: 112px;
+}
+.n7 span {
+  padding-left: 165px;
+}
+.n8 span {
+  padding-left: 135px;
+}
+
+.n1 {
+  animation: transition 2s;
+  margin-left: 12px;
+}
+.n2 {
+  animation: transition 3s;
+  margin-left: 12px;
+}
+.n3 {
+  animation: transition 4s;
+  margin-left: 12px;
+}
+.n4 {
+  animation: transition 5s;
+  margin-left: 12px;
+}
+.n5 {
+  animation: transition 6s;
+  margin-left: 12px;
+}
+.n6 {
+  animation: transition 6s;
+  margin-left: 12px;
+}
+.n7 {
+  animation: transition 6s;
+  margin-left: 12px;
+}
+.n8 {
+  animation: transition 6s;
+  margin-left: 12px;
+}
+footer {
+  bottom: 0;
+  text-align: center;
+  position: fixed;
+  right: 45%;
+}
+@keyframes changeColor {
+  from {
+    background-color: #007bff;
+  }
+  to {
+    background-color: #f2106e;
+  }
+}
+@keyframes transition {
+  from {
+    opacity: 1%;
+    margin-left: -342px;
+  }
+  to {
+    opacity: 100%;
+    margin-left: 12px;
+    color: #000;
+  }
+}
+
+/* Mobile view*/
+@media screen and (max-width: 880px) {
+  .n1 span,
+  .n2 span,
+  .n3 span,
+  .n4 span,
+  .n5 span,
+  .n6 span,
+  .n7 span,
+  .n8 span {
+    padding: 0;
+  }
+  div {
+    width: auto;
+  }
+  i {
+    display: contents;
+  }
+  footer {
+    position: fixed;
+    right: 35%;
+  }
+}
